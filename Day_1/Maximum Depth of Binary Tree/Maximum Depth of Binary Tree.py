@@ -20,12 +20,12 @@ class Solution:
             else:
                 return rdep + 1
 
-root = TreeNode(3)
-root.left = TreeNode(9)
-root.right = TreeNode(20)
-root.left.left = TreeNode(None)
-root.left.right = TreeNode(None)
-root.right.left = TreeNode(15)
-root.right.right = TreeNode(7)
+# root = TreeNode(3)
+# root.left = TreeNode(9)
+# root.right = TreeNode(20)
+# root.left.left = TreeNode(None)
+# root.left.right = TreeNode(None)
+# root.right.left = TreeNode(15)
+# root.right.right = TreeNode(7)
 
 print(f'Max Depth of this Binary tree is : {Solution.maxDepth(root)}')
