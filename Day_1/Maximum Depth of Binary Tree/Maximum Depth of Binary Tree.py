@@ -28,4 +28,18 @@ class Solution:
 # root.right.left = TreeNode(15)
 # root.right.right = TreeNode(7)
 
+def createTree(root, tree, index, n):
+    root.left = TreeNode(tree[index])
+    root.right = TreeNode(tree[index + 1])
+
+tree = list(input('Enter the nodes of binary tree: ').split(' '))
+root = TreeNode(tree[0])
+index = 1
+count = 0
+while True:
+    root.left = createTree(root, tree, index, )
+    index += 2**count
+    count += 1
+
+
 print(f'Max Depth of this Binary tree is : {Solution.maxDepth(root)}')
