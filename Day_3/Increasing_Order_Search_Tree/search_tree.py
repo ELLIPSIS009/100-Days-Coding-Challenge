@@ -8,9 +8,9 @@ class Solution:
     def inorder(root):
         tree = []
         if root:
-            Solution.inorder(root.left)
+            tree = Solution.inorder(root.left)
             tree.append(root.val)
-            Solution.inorder(root.right)
+            tree += Solution.inorder(root.right)
         return tree
 
     def increasingBST(root):
@@ -41,4 +41,4 @@ root.left.left.left = TreeNode(1)
 root.right.right = TreeNode(8)
 root.right.right.left = TreeNode(7)
 root.right.right.right = TreeNode(9)
-print(Solution.inorder(Solution.increasingBST(root)))
+print(Solution.inorder(root))
