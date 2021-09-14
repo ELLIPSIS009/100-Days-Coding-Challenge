@@ -11,6 +11,10 @@ class Solution:
             tree = Solution.inorder(root.left)
             tree.append(root.val)
             tree += Solution.inorder(root.right)
+        # elif root.left == None and root.right == None:
+        #     return
+        # else:
+        #     tree.append('null')
         return tree
 
     def increasingBST(root):
@@ -41,4 +45,4 @@ root.left.left.left = TreeNode(1)
 root.right.right = TreeNode(8)
 root.right.right.left = TreeNode(7)
 root.right.right.right = TreeNode(9)
-print(Solution.inorder(root))
+print(Solution.inorder(Solution.increasingBST(root)))
