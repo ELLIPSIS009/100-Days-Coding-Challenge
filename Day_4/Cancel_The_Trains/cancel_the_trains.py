@@ -34,6 +34,7 @@ output :
 3
 '''
 
+
 t  = int(input())
 crash = []
 for i in range(t):
